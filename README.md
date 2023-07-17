@@ -1,2 +1,2 @@
-# CapstoneQPn
+# CapstoneQP
 test
