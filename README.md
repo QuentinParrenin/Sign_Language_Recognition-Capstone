@@ -1,4 +1,5 @@
 # CapstoneQP
 - load the data
 - analyze the data
-- link the main resources to learn from
+- first advancements on CNN model
+- link the main resources to base my work from
