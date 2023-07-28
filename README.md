@@ -62,6 +62,7 @@ learn more on the trick and process from top solutions from the previous challen
 
 Current idea of the process : 
 The current idea of the model is to build a 3D CNN and transformers. 
+
 About the process it would be to depthen the cleaning, find tricks for the quality of the data/time optimisation, augmentation if needed,build 3D CNN and transformer mvp, optimization and tuning, reiteration, and then post training quantization. And submit it to kaggle for feedback result and optimize.
 
 ps the evaluation metric is the levenshtein metric (difference of characters between our output and the result ex : elephant , elephant = distance 0 ; zlephanw , elephant = distance 2 ; qwqwqwqw , elephant = distance 8) where score is (N-D)/N. Where N is total number of character and D total Levenshtein distance. The current top leaderboard score is around 0.78.
