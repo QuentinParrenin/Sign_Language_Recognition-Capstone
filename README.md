@@ -10,25 +10,27 @@ The train landmark is divided in 68 parquet files. Each of ~1.5GB for a total of
 The current stage (27/07)
     Includes 3 documents : 
     
-  EDA
-    - 50% of right land landmark are missing in a given frame
-    - 90% of left hand landmark are missing in a given frame
-    - 41% of both hand landmark are missing in a given frame
+      EDA
+        - 50% of right land landmark are missing in a given frame
+        - 90% of left hand landmark are missing in a given frame
+        - 41% of both hand landmark are missing in a given frame
 
-  Dictionary of patterns and frequences
-    - Understanding of our main pattern in term of labels.
+      Dictionary of patterns and frequences
+        - Understanding of our main pattern in term of labels.
         -32% is a set of number followed by a space (adresses)
         -24.3% is composed of only numbers or special character such as + - (phone number)
         -16.2% is composed of www, http, .com, .net (url)
         -12.4% are composed of only letters (mainly names, ex : javier le)
-        With those criteria 84.6% of the lables are classified. (Can go deeper on the analyzes to bring out some patterns though they become less and less clears)
+        With those criteria 84.6% of the lables are classified. 
+        (Can go deeper on the analyzes to bring out some patterns though they become less and less clears)
         
       - Dictionanary of frequences
         -The frequency of every individual letter, number, and special character in the text.
 
     Visuals
       -Made some 2d visuals of the clips we have of the positions of the hand, pose and face.
-      -Helpful to understand more the context of our data as we only have numbers provided, and a limited amount of information are given regarding the creation/collection of the data and its quality.
+      -Helpful to understand more the context of our data as we only have numbers provided, 
+      and a limited amount of information are given regarding the creation/collection of the data and its quality.
 
 Aspects and specificity to think about: 
 Words with double letter
