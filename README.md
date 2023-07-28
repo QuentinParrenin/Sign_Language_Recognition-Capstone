@@ -24,8 +24,8 @@ The current stage (27/07)
         With those criteria 84.6% of the lables are classified. 
         (Can go deeper on the analyzes to bring out some patterns though they become less and less clears)
         
-      - Dictionanary of frequences
-        -The frequency of every individual letter, number, and special character in the text.
+        - Dictionanary of frequences
+            -The frequency of every individual letter, number, and special character in the text.
 
     Visuals
       -Made some 2d visuals of the clips we have of the positions of the hand, pose and face.
