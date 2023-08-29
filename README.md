@@ -1,9 +1,12 @@
-    summarized overview 17/08/2023: 
+    Edit 29/08/2023: 
+Submission.ipynb is our final submission
     
-Our purpose is to recognize fingerspelled adresse, phone numbers and url from American Sign language. The landmark of the hand position are already given as well as the pose of the person with xyz extracted with mediapipe. The speed is an important factor, the fingerspelling would be around 5+ letters per second.
+    Summarized overview 17/08/2023: 
+    
+Our purpose is to recognize fingerspelled addresses, phone numbers, and URLs from American Sign Language. The landmark of the hand position is already given, as well as the pose of the person with XYZ extracted with mediapipe. The speed is an important factor. The fingerspelling would be around 5+ letters per second.
 
 About the data itself: 
-There is a total of about 10 060 000 frames with 1630 total landmarks (sequence_id, frame, 468*3 face, 21*3 left hand, 21*3 right hand, 33*3 pose 'where 3 is xyz dimensions' / probably could drop all of the face landmark, for alphabet they don't use facial or lip movement from what i've seen, this way we would have 63*2 + 99 total landmarks)
+There is a total of about 10 060 000 frames with 1630 total landmarks (sequence_id, frame, 468*3 face, 21*3 left hand, 21*3 right hand, 33*3 pose 'where 3 is xyz dimensions' / probably could drop all of the face landmarks, for alphabet they don't use facial or lip movement from what i've seen, this way we would have 63*2 + 99 total landmarks)
 The average number of Frame per clip is 160. It is not certain yet but the current assumption is that videos have been filmed either in 24 or 30fps.
 The train and test dataset are numbers, adresse and url. Meaning there will be quite of specific characters. (it is for those cases that real ASL speaker use the alphabet most of the time / otherwise they use words sign language)
 The train landmark is divided in 68 parquet files. Each of ~1.5GB for a total of 100GB. Each file of about 150 000 frames and the 1630 landmarks. However we won't need the majority of those landmarks as saw in the first point. With only about 226 features the memory will be only a portion.
