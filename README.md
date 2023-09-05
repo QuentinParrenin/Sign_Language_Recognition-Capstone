@@ -1,6 +1,6 @@
     Summarized overview 05/09/2023: 
     
-Our purpose is to recognize fingerspelled addresses, phone numbers, and URLs from American Sign Language. The landmark of the hand position is already given, as well as the pose of the person with XYZ extracted with mediapipe. The speed is an important factor. The fingerspelling would be around 5+ letters per second.
+The solution has the purpose to recognize fingerspelled addresses, phone numbers, and URLs from American Sign Language. The landmark of the hand position is already given, as well as the pose of the person with XYZ extracted with mediapipe. The speed is an important factor. The fingerspelling would be around 5+ letters per second.
 
 About the data itself: 
 There is a total of about 10 060 000 frames with 1630 total landmarks (sequence_id, frame, 468*3 face, 21*3 left hand, 21*3 right hand, 33*3 pose 'where 3 is xyz dimensions' / probably could drop all of the face landmarks, for alphabet they don't use facial or lip movement from what i've seen, this way we would have 63*2 + 99 total landmarks)
