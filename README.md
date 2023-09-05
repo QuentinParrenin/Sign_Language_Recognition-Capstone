@@ -1,7 +1,8 @@
-    Edit 29/08/2023: 
+    Edit 05/09/2023: 
 Submission.ipynb is our final submission
+The model has been trained further on Test1
     
-    Summarized overview 17/08/2023: 
+    Summarized overview 05/09/2023: 
     
 Our purpose is to recognize fingerspelled addresses, phone numbers, and URLs from American Sign Language. The landmark of the hand position is already given, as well as the pose of the person with XYZ extracted with mediapipe. The speed is an important factor. The fingerspelling would be around 5+ letters per second.
 
@@ -14,9 +15,11 @@ The train landmark is divided in 68 parquet files. Each of ~1.5GB for a total of
 The current project is divided in 5 sections : 
 1. ASL_EDA
 2. ASL_Visuals
-3. ASL_Dictionary_frequency_analysis3
-4. ASL_preprocessing4
-5. Research5
+3. ASL_Dictionary_frequency_analysis
+4. ASL_preprocessing
+5. Research
+6. Codes and Submission
+7. Streamlit
 
 1 ASL_EDA
 
@@ -75,7 +78,15 @@ Part3:
 - encoder and decoder architecture and code
 - loss function chose was categorical_crossentropy loss function with label smoothing support
 
-The current stage (27/07)
+6. Code and submission
+
+The model has been finished just in time to try an attempt to submit on kaggle. The model worked though had to abandon some efficiency to fit the requirements of the competition on time. Being having a model under 40MB and an inference time inferior to 0.6 sec per prediction in average. 
+
+7. Streamlit
+
+The web app has been done on streamlit, with videos prerecorded and the label corresponding. The next step would be to have a direct result on the webcam. It implies extracting the data from the webcam in real time, passing it throw preprocessing and throw the trained model with inference. 
+
+The current stage on date of (27/07)
     Includes 3 documents : 
 
 Aspects and specificity to think about: 
@@ -106,8 +117,9 @@ How do we prefer to communicate, do we use miro mainly for strategy or organizat
 learn more on the trick and process from top solutions from the previous challenge on asl word recognition
 
 
-Current idea of the process (17/08): 
-The current idea of the model is to build a 3D CNN and transformer. 
+Current Process:
+The Pre-LN has been made and have decent result though should be improved in the futur.
+The next step is the deplyment to have a real time recognition using streamlit, currently half way on it and have a streamlit functional for non-real time prediction. 
 
 About the process it would be to start a first version of the model, find tricks for the quality of the data/time optimisation, augmentation if needed,build 3D CNN and transformer mvp, optimization and tuning, reiteration, and then post training quantization. And submit it to kaggle for feedback result and optimize.
 
