@@ -1,4 +1,4 @@
-    Summarized overview 05/09/2023: 
+    Summarized overview: 
     
 The solution has the purpose to recognize fingerspelled addresses, phone numbers, and URLs from American Sign Language. The landmark of the hand position is already given, as well as the pose of the person with XYZ extracted with mediapipe. The speed is an important factor. The fingerspelling would be around 5+ letters per second.
 
