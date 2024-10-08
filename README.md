@@ -8,7 +8,7 @@ The average number of Frame per clip is 160. It is not certain yet but the curre
 The train and test dataset are numbers, adresse and url. Meaning there will be quite of specific characters. (it is for those cases that real ASL speaker use the alphabet most of the time / otherwise they use words sign language)
 The train landmark is divided in 68 parquet files. Each of ~1.5GB for a total of 100GB. Each file of about 150 000 frames and the 1630 landmarks. However we won't need the majority of those landmarks as saw in the first point. With only about 226 features the memory will be only a portion.
 
-The current project is divided in 5 sections : 
+The project is divided in 7 sections : 
 1. ASL_EDA
 2. ASL_Visuals
 3. ASL_Dictionary_frequency_analysis
